@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int factorial(int val){
+    int mul=1,result;
+    if(val==1){
+        return 1;
+    }
+    else{
+        result=mul*val;
+        return result*factorial(val-1);
+    }
+}
+
+int main()
+{
+    int val;
+    scanf("%d",&val);
+    int b= factorial(val);
+    printf("The factorial is:%d",b);
+    return 0;
+}
